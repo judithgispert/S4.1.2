@@ -1,4 +1,4 @@
-package Controllers;
+package cat.itacademy.barcelonactiva.cognoms.nom.s04.t01.n02.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
