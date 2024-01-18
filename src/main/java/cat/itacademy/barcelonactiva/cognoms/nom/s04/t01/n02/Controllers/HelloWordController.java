@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWordController {
-    @GetMapping("/HelloWord")
-    public String greet(@RequestParam(defaultValue = "UNKNOWN") String name){
+    @GetMapping("/HelloWorld")
+    public String greet(@RequestParam(value = "name", defaultValue = "UNKNOWN") String name){
         return "Hello, " + name + ". You're running a Maven project.";
     }
 
-    @GetMapping({"/HelloWord2", "/HelloWord2/{name}"})
+    @GetMapping({"/HelloWorld2", "/HelloWorld2/{name}"})
     public String greet2(@PathVariable(required = false) String name){
         if (name != null){
             return "Hello, " + name + ". You're running a Maven project.";
